@@ -19,6 +19,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- popup perso-->
+        <link href="css/popup.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -50,7 +52,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon popup" onclick="egg()" id="egg"><i class="fas fa-star"></i><span class="popuptext" id="myPopup"><img src="https://cdn.discordapp.com/emojis/690584308569866280.png"></span></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
@@ -63,9 +65,9 @@
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase">à propos de moi</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon" id="egg"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
@@ -590,12 +592,15 @@
               alert("Votre navigateur ne supporte pas cette fonctionnalité.");
             }
           }
-            
-          function (){
-              var egg = document.getElementById("egg");
-              egg.addEventListener("onclick", null, () => {
-                  alert("ça marche");
-              }); // à finir
+        </script>
+
+        <img src="https://cdn.discordapp.com/emojis/690584308569866280.png?v=1" hidden id="eggimg">
+
+        <!-- script random -->
+        <script>
+          function egg(){
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
           }
         </script>
     </body>
