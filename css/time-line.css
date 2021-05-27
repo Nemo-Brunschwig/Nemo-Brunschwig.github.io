@@ -173,7 +173,7 @@ input[data-description="2000"]:checked ~ #timeline-descriptions-wrapper p[data-d
   }
 
   .dot-info {
-    left: calc((((1000px - 25px) / 20) * -1) - 1px);
+    left: calc((((1000px - 25px) / 14) * -1) - 1px);
   }
 
   #timeline-descriptions-wrapper {
