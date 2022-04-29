@@ -9,9 +9,10 @@
   visibility: hidden;
   width: 160px;
   background-color: #fff;
-  color: #fff;
+  color: #2c3e50;
   text-align: center;
   border-radius: 6px;
+  border: 1px solid #2c3e50;
   padding: 8px 0;
   position: absolute;
   z-index: 1;
@@ -25,11 +26,26 @@
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
+  left: 44%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top: 10px solid #fff;
+}
+
+.popup .popuptext::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+
+  border-top: 11px solid #2c3e50;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */

@@ -13,7 +13,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="assets/img/avataaars.png" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/0d32bc3e88.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">à propos</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#pro">Situations Pros</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#pro">Expériences</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Compétences</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projets Persos</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
@@ -54,7 +54,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon popup" onclick="egg()" id="egg"><i class="fas fa-star"></i><span class="popuptext" id="myPopup"><img src="https://cdn.discordapp.com/emojis/690584308569866280.png"></span></div>
+                    <div class="divider-custom-icon popup" onclick="egg()" id="egg"><i class="fas fa-star"></i><span class="popuptext" id="myPopup"><img src="https://cdn.discordapp.com/emojis/783810105631703050.gif"></span></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
@@ -74,8 +74,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Je m'appelle Némo Brunschwig et je suis étudiant en programmation. J'étudie actuellement en BTS SIO option SLAM au lycée Paul-Louis Courier à Tours.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">Je programme depuis que j'ai 14 ans et mon plus grand rêve est de devenir développeur de jeux vidéo. Je passe tout mon temps libre à coder et à m'instruire sur le vaste monde de l'informatique.</p></div>
+                    <div class="col-lg-4 ml-auto"><p class="lead">Je m'appelle Némo Brunschwig et je suis étudiant en programmation. J'étudie actuellement comme programmeur de jeux vidéo à Anaten.</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">Je programme depuis que j'ai 14 ans et mon plus grand rêve est de devenir programmeur de jeux vidéo. Je passe tout mon temps libre à coder et à m'instruire sur le vaste monde de l'informatique.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -90,7 +90,7 @@
         <section class="page-section bg-primary text-white portfolio" id="pro">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Situations Professionnelles</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0">Expériences</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -319,22 +319,27 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <p class="lead">
-                            Pour me contacter vous pouvez le faire à l'adresse suivante<br>
-                            <button id="mail-pop" type="button" class="btn btn-link" data-toggle="popover" data-placement="bottom" data-content="Copié !" onclick="CopieMail()">
-                                <i class="fas fa-envelope"></i>
-                                nemo.brunschwig@gmail.com
-                            </button>
-                        </p>
-
+                    <div class="col-lg-8 mx-auto text-center lead">
+                      <a href="mailto://nemo.brunschwig@gmail.com" target="_blank" class="mr-2">
+                          <i class="fas fa-envelope"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/nemo-brunschwig/" target="_blank" class="mr-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                      <a href="https://twitter.com/Mizari_W/" target="_blank" class="mr-1">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                      <a id="discord-pop" type="button" class="popup" onclick="CopieDiscord()">
+                        <i class="fa-brands fa-discord"></i>
+                        <span class="popuptext" id="discordPopup">Copié !</span>
+                      </a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © Némo Brunschwig - Portfolio 2021</small></div>
+            <div class="container"><small>Copyright © Némo Brunschwig - Portfolio 2022</small></div>
         </div>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
@@ -996,20 +1001,20 @@ par rapport aux autres organismes certificateurs. Ecocert intervient chaque jour
         <!-- Bootstrap popover -->
         <script type="text/javascript">
           //autoriser les popover
-          var mailPop = document.getElementById('mail-pop');
+          var mailPop = document.getElementById('discord-pop');
           var popover = new bootstrap.Popover(mailPop, {trigger: "focus"});
 
           //fonction pour copier l'adresse mail
-          function CopieMail() {
+          function CopieDiscord() {
             if (navigator) {
-              navigator.clipboard.writeText("nemo.brunschwig@gmail.com");
+              navigator.clipboard.writeText("Mizari | W#0409");
+                var popup = document.getElementById("discordPopup");
+                popup.classList.toggle("show");
             } else {
               alert("Votre navigateur ne supporte pas cette fonctionnalité.");
             }
           }
         </script>
-
-        <img src="https://cdn.discordapp.com/emojis/690584308569866280.png?v=1" hidden id="eggimg">
 
         <!-- script random -->
         <script>
