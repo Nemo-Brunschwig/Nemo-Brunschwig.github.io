@@ -10248,3 +10248,40 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+/*Add Mizari*/
+.atom-editor {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/atom_editor.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.electron-js {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/electron_js.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.visual-studio {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/visual_studio.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+.csharp {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/csharp.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
