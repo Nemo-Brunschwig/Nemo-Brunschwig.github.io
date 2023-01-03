@@ -287,7 +287,7 @@
                 <!-- Contact Section Form-->
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center lead">
-                      <a href="mailto://nemo.brunschwig@gmail.com" target="_blank" class="mr-2">
+                      <a href="mailto:nemo.brunschwig@gmail.com" target="_blank" class="mr-2">
                           <i class="fas fa-envelope"></i>
                       </a>
                       <a href="https://www.linkedin.com/in/nemo-brunschwig/" target="_blank" class="mr-2">
@@ -768,12 +768,12 @@
           var mailPop = document.getElementById('discord-pop');
           var popover = new bootstrap.Popover(mailPop, {trigger: "focus"});
 
-          //fonction pour copier l'adresse mail
+          //fonction pour copier mon pseudo Discord
           function CopieDiscord() {
             if (navigator) {
-              navigator.clipboard.writeText("Mizari | W#0409");
-                var popup = document.getElementById("discordPopup");
-                popup.classList.toggle("show");
+              navigator.clipboard.writeText("Mizari | W#0123");
+              var popup = document.getElementById("discordPopup");
+              popup.classList.toggle("show");
             } else {
               alert("Votre navigateur ne supporte pas cette fonctionnalité.");
             }
@@ -781,7 +781,7 @@
         </script>
 
         <!-- script random -->
-        <script>
+        <script type="text/javascript">
           function egg(){
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
