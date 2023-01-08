@@ -10285,3 +10285,12 @@ form .row:first-child .floating-label-form-group {
   background-size: 100%;
   vertical-align: middle;
 }
+
+.gms {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/svg/game-maker.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
