@@ -10294,3 +10294,12 @@ form .row:first-child .floating-label-form-group {
   background-size: 100%;
   vertical-align: middle;
 }
+
+.construct {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/img/svg/construct.svg') 50% 50% no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+}
