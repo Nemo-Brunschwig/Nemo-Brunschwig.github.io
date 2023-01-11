@@ -191,17 +191,20 @@
   cursor: pointer;
   width: 50px;
   animation: float 4s ease-in-out infinite;
+  margin: auto;
+  display: flex;
+  margin-top: 25px;
 }
 
 .degrade.left {
     left: 0;
+    background-image: linear-gradient(90deg,#fff 12%,rgba(14,87,196,0));
 }
 .degrade.right {
     right: 0;
     background-image: linear-gradient(270deg,#fff 12%,rgba(14,87,196,0));
 }
 .degrade {
-    background-image: linear-gradient(90deg,#fff,rgba(14,87,196,0));
     height: 100%;
     pointer-events: none;
     width: 30%;
