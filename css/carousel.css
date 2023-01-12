@@ -164,6 +164,60 @@
   grid-column: 14/span 1;
 }
 
+.item:nth-child(15) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 4.95s;
+  animation-duration: 4.95s;
+  -webkit-animation-delay: 1.77s;
+  animation-delay: 1.77s;
+  grid-column: 15/span 1;
+}
+
+.item:nth-child(16) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 3.54s;
+  animation-duration: 3.54s;
+  -webkit-animation-delay: .06s;
+  animation-delay: .06s;
+  grid-column: 16/span 1;
+}
+
+.item:nth-child(17) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 6.01s;
+  animation-duration: 6.01s;
+  -webkit-animation-delay: .04s;
+  animation-delay: .04s;
+  grid-column: 17/span 1;
+}
+
+.item:nth-child(18) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 3.4s;
+  animation-duration: 3.4s;
+  -webkit-animation-delay: .33s;
+  animation-delay: .33s;
+  grid-column: 18/span 1;
+}
+
+.item:nth-child(19) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 6.18s;
+  animation-duration: 6.18s;
+  -webkit-animation-delay: .27s;
+  animation-delay: .27s;
+  grid-column: 19/span 1;
+}
+
+.item:nth-child(20) {
+  grid-column: 1/span 1;
+  -webkit-animation-duration: 4.31s;
+  animation-duration: 4.31s;
+  -webkit-animation-delay: 1.45s;
+  animation-delay: 1.45s;
+  grid-column: 20/span 1;
+}
+
 .item:nth-child(odd) {
   grid-row: 2;
 }
