@@ -10303,3 +10303,7 @@ form .row:first-child .floating-label-form-group {
   background-size: 100%;
   vertical-align: middle;
 }
+
+.emoji{
+  max-width: 30px;
+}
