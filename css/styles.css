@@ -10305,5 +10305,5 @@ form .row:first-child .floating-label-form-group {
 }
 
 .emoji{
-  max-width: 30px !important;
+  max-width: 30px;
 }
