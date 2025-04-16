@@ -382,9 +382,6 @@
                       <a href="https://www.linkedin.com/in/nemo-brunschwig/" target="_blank" class="mr-2">
                         <i class="fa-brands fa-linkedin"></i>
                       </a>
-                      <a href="https://twitter.com/BrunschwigNemo" target="_blank" class="mr-1">
-                        <i class="fa-brands fa-twitter"></i>
-                      </a>
                       <a id="discord-pop" type="button" class="popup mr-1" onclick="CopieDiscord()">
                         <i class="fa-brands fa-discord"></i>
                         <span class="popuptext" id="discordPopup">Copié !</span>
@@ -981,7 +978,7 @@
           //fonction pour copier mon pseudo Discord
           function CopieDiscord() {
             if (navigator) {
-              navigator.clipboard.writeText("Mizari | W#0123");
+              navigator.clipboard.writeText("mizari.dev");
               var popup = document.getElementById("discordPopup");
               popup.classList.toggle("show");
             } else {
