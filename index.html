@@ -40,14 +40,18 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">à propos</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#pro">Expériences</a></li>
+                    <ul class="navbar-nav ml-auto fr">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Compétences</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projets Persos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projets</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
-                    <a href="en" class="btn btn-link">🇬🇧</a>
+                    <ul class="navbar-nav ml-auto en" hidden>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="?lang=en" class="btn btn-link fr">🇬🇧</a>
+                    <a href="/" class="btn btn-link en" hidden>🇫🇷</a>
                 </div>
             </div>
         </nav>
@@ -69,91 +73,52 @@
                             </div>
                             <!-- Masthead Subheading-->
                             <div class="typewriting-area">
-                                <p class="masthead-subheading font-weight-light mb-0">Développeur</p>
-                                <code class="masthead-subheading font-weight-light mb-0 typewriting-text"></code>
-                                <span class="typewriting-cursor"></span>
+                                <code class="masthead-subheading font-weight-light mb-0 typewriting-text en" hidden></code>
+                                <span class="typewriting-cursor en" hidden></span>
+                                <p class="masthead-subheading font-weight-light mb-0 fr">Développeur</p>
+                                <p class="masthead-subheading font-weight-light mb-0 en" hidden>Developer</p>
+                                <code class="masthead-subheading font-weight-light mb-0 typewriting-text fr"></code>
+                                <span class="typewriting-cursor fr"></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md mt-md-0 mt-5">
                         <!-- About Section-->
-                        <div class="container  align-items-center flex-column">
-                            <!-- About Section Heading-->
-                            <h2 class="page-section-heading text-center text-uppercase">à propos de moi</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom divider-light">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
+                        <div class="container align-items-center flex-column">
+                            <div class="d-none d-md-block">
+                                <!-- About Section Heading-->
+                                <h2 class="page-section-heading text-center text-uppercase">à propos de moi</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom divider-light">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
                             </div>
                             <!-- About Section Content-->
                             <div class="row justify-content-center">
                                 <p class="lead w-md-50">Je développe depuis que j'ai 14 ans et mon plus grand rêve est de devenir développeur de jeux vidéo. Je passe tout mon temps libre à programmer et à m'instruire sur le vaste monde de l'informatique.</p>
                             </div>
                             <!-- About Section Button-->
-                            <div class="text-center mt-4">
-                                <a class="btn btn-xl btn-outline-secondary" href="assets/CV.pdf" target="_blank">
-                                    <i class="fas fa-download mr-2"></i>
-                                    Télécharger mon CV
-                                </a>
+                            <div class="row">
+                                <div class="text-center mt-4 col-md">
+                                    <a class="btn btn-xl btn-outline-secondary" href="assets/CV.pdf" target="_blank">
+                                        <i class="fas fa-download mr-2"></i>
+                                        Mon CV
+                                    </a>
+                                </div>
+                                <div class="text-center mt-4 col-md">
+                                    <a class="btn btn-xl btn-outline-primary js-scroll-trigger" href="#contact">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        Contact
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Situations Pro Section-->
-        <section class="page-section bg-primary portfolio" id="pro">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Expériences</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#proModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pro/game.png" alt="exaegis"/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#proModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pro/safe.png" alt="alone in the shrooms"/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#proModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pro/submarine.png" alt="sights tow worlds"/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 7-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#proModal7">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/pro/circus.png" alt="gardener in fire"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Skills Section-->
         <section class="page-section mb-0" id="skills">
             <div>
@@ -162,7 +127,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-senate"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Skills Section Content-->
@@ -311,7 +276,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-senate"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -381,7 +346,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-senate"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <form action="https://fabform.io/f/Ppuipej" method="post">
@@ -798,155 +763,6 @@
                 </div>
             </div>
         </div>
-        <!-- Pro Modals -->
-        <!-- Pro Modal 4-->
-        <div class="portfolio-modal modal fade" id="proModal4" tabindex="-1" role="dialog" aria-labelledby="proModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="proModal4Label">Stage</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/pro/game.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Présentation de l'entreprise</h2>
-                                    <p class="mb-5">EXÆGIS est l’agence de notation référente du secteur numérique. Elle délivre également un label pour apporter la confiance nécessaire au financement et à l’investissement des entreprises du Numérique.<br><br>Garante des sociétés offrant des contrats pluriannuels « as a service », sous forme d'abonnement ou de type redevances. Elle apporte sa garantie aux bailleurs, qui peuvent ainsi financer ces contrats, et clients finaux qui souhaitent sécuriser l’exécution de leurs contrats. Elle accompagne ainsi le développement des éditeurs.<br><br>Exægis s’adresse à tous ceux qui font du Numérique (Start Up, SSII et ESN), du financent (Investisseurs, Fonds d'investissement et Loueurs) et l’utilisent (Client finals, Grands Comptes et PME).</p>
-                                    <div class="text-center">
-                                        <a class="btn btn-xl btn-outline-secondary" href="assets/exaegis/rapport_de_stage.pdf" target="_blank">
-                                            <i class="fas fa-download mr-2"></i>
-                                            Télécharger le rapport de stage
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pro Modal 5-->
-        <div class="portfolio-modal modal fade" id="proModal5" tabindex="-1" role="dialog" aria-labelledby="proModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="proModal5Label">Alone In The... Shrooms?</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/pro/safe.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Contexte</h2>
-                                    <p>2018, comme tous les ans <a href="https://hitboxmakers.fr/" target="_blank">Hitbox Maker</a> organise une Game Jam. Du haut de mes 16 ans je décide d'y participer. C'était ma première game jam. Je me mets en équipe avec 4 gars qui n'ont jamais développé de jeu de leur vie, alors on décide de faire le notre sous Construct 3.</p>
-                                    <h2>Synopsis</h2>
-                                    <p>Vous êtes dans une base sous-marine, où d'étranges expérimentations ont lieu sur des légumes... Ces derniers ont évolué en créatures pas très amicales !<br>Battez-vous dans les salles pour trouver la source de ce chao et survivez. Bonne chance !</p>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://da-wae.itch.io/aits" target="_blank">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                        Jouer au jeu
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pro Modal 6-->
-        <div class="portfolio-modal modal fade" id="proModal6" tabindex="-1" role="dialog" aria-labelledby="proModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="proModal6Label">Sights Tow Worlds</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/pro/submarine.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Contexte</h2>
-                                    <p>2022, je suis en première année à <a>Anaten</a>, et l'école décide de participer à la Global Game Jam. Étant en première année je ne suis pas censé participer à cette game jam. Mais j'obtiens une dérogation spéciale et je participe avec les dev 2e année et les créa 3e année. Cette fois, le jeu est développé sous Unity 3D.</p>
-                                    <h2>Synopsis</h2>
-                                    <p>Votre amie est perdue dans un monde étrange, séparé en deux mais intrinsèquement reliés : le monde de la lumière et celui des ombres. Utilisez votre ombre et échangez vos places afin de passer les obstacles, sautez, courrez, explorez ces mondes étranges afin de retrouver votre amie et quittez cet espace éthéré.</p>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://tomerzz.itch.io/sights-two-worlds" target="_blank">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                        Jouer au jeu
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pro Modal 7-->
-        <div class="portfolio-modal modal fade" id="proModal7" tabindex="-1" role="dialog" aria-labelledby="proModal7Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="proModal7Label">Gardener on Fire</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/pro/circus.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Contexte</h2>
-                                    <p>2023, je suis en deuxième année à <a>Anaten</a>, et l'école décide de participer à la Global Game Jam. Étant en deuxième année je suis obligé de participer à cette game jam (pour mon plus grand bonheur). Je me mets alors en groupe avec un camarade de ma promo, et un ancien élève de l'école qui n'est autre que mon colocataire. On décide alors de créer un jeu en Réalité Virtuelle sous Unity 3D.</p>
-                                    <h2>Synopsis</h2>
-                                    <p>Des méchants hommes racines veulent détruire votre maison (sans raison, juste parce qu'ils ont envie) vous prenez alors vos outils de jardiniers les plus puissants pour protéger votre demeure.</p>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/gardener-in-fire" target="_blank">
-                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                        Installer le jeu
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Skills Modal -->
         <div class="portfolio-modal modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="skillsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
@@ -1029,13 +845,32 @@
                     base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
 
                 }
-            )
+            );
+
+            // switch to english
+            let params = new URLSearchParams(document.location.search);
+            let lang = params.get("lang");
+            if (lang === "en") {
+                let fr = document.querySelectorAll(".fr");
+                fr.forEach(el => {
+                    el.setAttribute("hidden", "true");
+                });
+                let en = document.querySelectorAll(".en");
+                en.forEach(el => {
+                    el.removeAttribute("hidden");
+                });
+            }
 
             // typewriting effect
-            let text = document.querySelector(".typewriting-text");
-            let contents = [
+            let text = document.querySelector(".typewriting-text:not([hidden])");
+            let contents_fr = [
                 "Jeux Vidéo",
                 "Réalité étendue",
+                "Web"
+            ];
+            let contents_en = [
+                "Game",
+                "Extended reality",
                 "Web"
             ];
             let content = '';
@@ -1099,7 +934,7 @@
                     char_index--;
                 } else {
                     char_index = 0;
-                    content = contents[text_index%contents.length];
+                    content = lang==="en"?contents_en[text_index%contents_en.length]:contents_fr[text_index%contents_fr.length];
                     text_index++;
                     state = states.WRITE;
                 }
