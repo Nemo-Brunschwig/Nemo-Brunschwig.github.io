@@ -1,0 +1,23 @@
+.typewriting-area{
+    display: flex;
+    gap: 5px;
+}
+
+.typewriting-text{
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.typewriting-cursor{
+    width: 3px;
+    height: 35px;
+    background: var(--text);
+    animation: cursor-anime 1s ease infinite;
+}
+
+@keyframes cursor-anime {
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+}

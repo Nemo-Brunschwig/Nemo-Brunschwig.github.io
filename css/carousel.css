@@ -252,11 +252,11 @@
 
 .degrade.left {
     left: 0;
-    background-image: linear-gradient(90deg,#fff 12%,rgba(14,87,196,0));
+    background-image: linear-gradient(90deg,var(--base) 12%,rgba(14,87,196,0));
 }
 .degrade.right {
     right: 0;
-    background-image: linear-gradient(270deg,#fff 12%,rgba(14,87,196,0));
+    background-image: linear-gradient(270deg,var(--base) 12%,rgba(14,87,196,0));
 }
 .degrade {
     height: 100%;
