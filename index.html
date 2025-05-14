@@ -104,7 +104,8 @@
                                 <div class="text-center mt-4 col-md">
                                     <a class="btn btn-xl btn-outline-secondary" href="assets/CV.pdf" target="_blank">
                                         <i class="fas fa-download mr-2"></i>
-                                        Mon CV
+                                        <span class="fr">Mon CV</span>
+                                        <span class="en" hidden>My Resume</span>
                                     </a>
                                 </div>
                                 <div class="text-center mt-4 col-md">
@@ -123,7 +124,8 @@
         <section class="page-section mb-0" id="skills">
             <div>
                 <!-- Skills Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase">Mes Compétences</h2>
+                <h2 class="page-section-heading text-center text-uppercase fr">Mes Compétences</h2>
+                <h2 class="page-section-heading text-center text-uppercase en" hidden>My Skills</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -272,7 +274,8 @@
         <section class="page-section bg-primary portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Projets Personnels</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0 fr">Projets Personnels</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0 en" hidden>Personnal Projects</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -342,7 +345,8 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase mb-0">Me contacter</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0 fr">Me contacter</h2>
+                <h2 class="page-section-heading text-center text-uppercase mb-0 en" hidden>Contact me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -351,18 +355,22 @@
                 </div>
                 <form action="https://fabform.io/f/Ppuipej" method="post">
                     <div class="form-group">
-                        <label for="emailInput">Votre adresse mail</label>
+                        <label class="fr" for="emailInput">Votre adresse mail</label>
+                        <label class="en" for="emailInput" hidden>Your email address</label>
                         <input name="mail" type="email" class="form-control" id="emailInput" placeholder="nom@example.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="objectInput">Objet</label>
+                        <label class="fr" for="objectInput">Objet</label>
+                        <label class="en" for="objectInput" hidden>Object</label>
                         <input name="object" type="text" class="form-control" id="objectInput" placeholder="Offre d'emploi :D" required>
                     </div>
                     <div class="form-group">
-                        <label for="bodyInput">Contenu</label>
+                        <label class="fr" for="bodyInput">Contenu</label>
+                        <label class="en" for="bodyInput" hidden>Content</label>
                         <textarea name="body" class="form-control" id="bodyInput" rows="3" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enoyer</button>
+                    <button type="submit" class="btn btn-primary fr">Enoyer</button>
+                    <button type="submit" class="btn btn-primary en" hidden>Submit</button>
                 </form>
                 <!-- Contact Section Form-->
                 <!--<div class="row">-->
