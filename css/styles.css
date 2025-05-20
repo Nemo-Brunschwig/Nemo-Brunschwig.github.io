@@ -10079,19 +10079,19 @@ h3 {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+  color: var(--text);
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: var(--text);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: var(--blue);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+  color: var(--text);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: var(--blue);
