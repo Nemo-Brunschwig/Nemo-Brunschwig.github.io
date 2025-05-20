@@ -251,11 +251,11 @@
 }
 
 .degrade.left {
-    left: 0;
+    left: -1px;
     background-image: linear-gradient(90deg,var(--base) 12%,rgba(14,87,196,0));
 }
 .degrade.right {
-    right: 0;
+    right: -2px;
     background-image: linear-gradient(270deg,var(--base) 12%,rgba(14,87,196,0));
 }
 .degrade {
