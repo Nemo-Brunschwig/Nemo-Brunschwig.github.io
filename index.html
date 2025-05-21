@@ -14,6 +14,8 @@
         <link rel="icon" type="image/png" href="assets/img/avatar.png"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://kit.fontawesome.com/0d32bc3e88.js" crossorigin="anonymous"></script>
+        <!-- icomoon icons -->
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4c135e7899/Portfolio/style.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
@@ -25,12 +27,14 @@
         <link href="css/carousel.css" rel="stylesheet"/>
         <!-- typewriting -->
         <link href="css/typewriting.css" rel="stylesheet">
+        <!-- skills -->
+        <link href="css/skills.css" rel="stylesheet">
         <!-- twemoji -->
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Portfolio</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +58,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead  d-flex bg-primary text-center page-section mb-0" id="about">
+        <header class="masthead  d-flex bg-secondary text-center page-section mb-0" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md mb-md-0 mb-5">
@@ -64,7 +68,7 @@
                             <!-- Masthead Heading-->
                             <h1 class="masthead-heading text-uppercase mb-0">Némo</h1>
                             <!-- Icon Divider-->
-                            <div class="divider-custom divider-light">
+                            <div class="divider-custom ">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon popup" onclick="egg()" id="egg"><i class="fa-solid fa-jedi"></i><span class="popuptext" id="myPopup"><img src="https://cdn.discordapp.com/emojis/783810105631703050.gif"></span></div>
                                 <div class="divider-custom-line"></div>
@@ -88,7 +92,7 @@
                                 <h2 class="page-section-heading text-center text-uppercase fr">à propos de moi</h2>
                                 <h2 class="page-section-heading text-center text-uppercase en" hidden>about me</h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom divider-light">
+                                <div class="divider-custom ">
                                     <div class="divider-custom-line"></div>
                                     <div class="divider-custom-icon"><i class="fa-solid fa-book-journal-whills"></i></div>
                                     <div class="divider-custom-line"></div>
@@ -116,6 +120,43 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Liens -->
+                        <div class="container align-items-center flex-column mt-5">
+                            <div class="d-none d-md-block">
+                                <!-- About Section Heading-->
+                                <h2 class="page-section-heading text-center text-uppercase fr">mes liens</h2>
+                                <h2 class="page-section-heading text-center text-uppercase en" hidden>my links</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom ">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-republic"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                            </div>
+                            <!-- About Section Content-->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 mx-auto text-center lead">
+                                    <a href="mailto:nemo.brunschwig@gmail.com" target="_blank" class="mr-2">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/nemo-brunschwig/" target="_blank" class="mr-2">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://discord.com/users/591248680506359828" class="mr-2" target="_blank">
+                                        <i class="fa-brands fa-discord"></i>
+                                    </a>
+                                    <a href="https://github.com/Mizari-Dev" target="_blank" class="mr-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://github.com/Nemo-Brunschwig" target="_blank" class="mr-2">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://nemo-brunschwig.itch.io/" target="_blank">
+                                        <i class="fa-brands fa-itch-io"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,20 +168,101 @@
                 <h2 class="page-section-heading text-center text-uppercase fr">Mes Compétences</h2>
                 <h2 class="page-section-heading text-center text-uppercase en" hidden>My Skills</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom ">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-trophy"></i></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Skills Section Content-->
-                <div style="margin:0" class="static-skills row justify-content-center">
-                    <div class="item">
-                        <img class="icons" data-toggle="modal" data-target="#skills-modal" data-text="J'apprends actuellement Unity Engine grâce à ma formation à l'école Anaten." src="assets/img/competences/unity.png" alt="Unity Engine">
+                <div class="row">
+                    <div class="col border border-purple rounded pt-5 position-relative mb-5 mr-md-3">
+                        <div class="head-skill position-absolute p-2 bg-primary">
+                            <h3 class="text-uppercase text-purple">Game Dev</h3>
+                        </div>
+                        <div class="accordion mb-4" id="gameSkills">
+                            <div class="text-center">
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#unity" aria-expanded="false" aria-controls="unity">
+                                    <i class="fa-brands fa-unity"></i>
+                                </button>
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#unreal" aria-expanded="false" aria-controls="unreal">
+                                    <i class="icon-unrealengine"></i>
+                                </button>
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#gameMaker" aria-expanded="false" aria-controls="gameMaker">
+                                    <i class="icon-game-maker"></i>
+                                </button>
+                            </div>
+
+                            <div id="unity" class="collapse show" aria-labelledby="headingOne" data-parent="#gameSkills">
+                                <div class="card-body">
+                                    Je fais du Unity et du C# et j'ai un bon niveau 👍
+                                    <div class="row justify-content-center mt-1">
+                                        <a class="col text-center" href="https://www.hackerrank.com/certificates/bbf5a88b5e62" target="_blank">
+                                            <img src="assets/img/certif_c%23.png" alt="certif" style="width: 210px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="unreal" class="collapse" aria-labelledby="headingTow" data-parent="#gameSkills">
+                                <div class="card-body">
+                                    Je fais du Unreal Engine et du C++ et je me débrouille pas trop mal 🫡
+                                </div>
+                            </div>
+
+                            <div id="gameMaker" class="collapse" aria-labelledby="headingThree" data-parent="#gameSkills">
+                                <div class="card-body">
+                                    Je fais du GameMaker Studio, j'ai tout appris tout seul et je suis un boss 😎
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <img class="icons" data-toggle="modal" data-target="#skills-modal" data-text="J'ai commencé à apprendre à développer en C# en formation en BTS, puis en formation à l'école Anaten pour développer sous Unity Engine." src="assets/img/competences/csharp.png" alt="C#">
+                    <div class="col border border-success rounded pt-5 position-relative mb-5">
+                        <div class="head-skill position-absolute p-2 bg-primary">
+                            <h3 class="text-uppercase text-success">Web Dev</h3>
+                        </div>
+                        <div class="accordion mb-4" id="webSkills">
+                            <div class="text-center">
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#front" aria-expanded="true" aria-controls="front">
+                                    <i class="fa-solid fa-globe"></i>
+                                </button>
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#nodejs" aria-expanded="false" aria-controls="nodejs">
+                                    <i class="fa-brands fa-node-js"></i>
+                                </button>
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#php" aria-expanded="false" aria-controls="php">
+                                    <i class="fa-brands fa-php"></i>
+                                </button>
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#database" aria-expanded="false" aria-controls="database">
+                                    <i class="fa-solid fa-database"></i>
+                                </button>
+                            </div>
+
+                            <div id="front" class="collapse show" aria-labelledby="headingOne" data-parent="#webSkills">
+                                <div class="card-body">
+                                    Je connais HTML/CSS/JS comme tous les devs, y a rien de fou 🤷‍♂️
+                                </div>
+                            </div>
+
+                            <div id="nodejs" class="collapse" aria-labelledby="headingTow" data-parent="#webSkills">
+                                <div class="card-body">
+                                    Je fais des bots Discord avec Node.js depuis +7 ans. Actuellement je fais un site web avec Next.js et je me forme sur le tas 💪
+                                </div>
+                            </div>
+
+                            <div id="php" class="collapse" aria-labelledby="headingThree" data-parent="#webSkills">
+                                <div class="card-body">
+                                    J'ai appris à programmer en PHP en BTS et j'ai fait beaucoup de challenges PHP sur la plateforme Root-Me donc je sais casser les sites PHP 🤡
+                                </div>
+                            </div>
+
+                            <div id="database" class="collapse" aria-labelledby="headingFour" data-parent="#webSkills">
+                                <div class="card-body">
+                                    SQL, SQLite, NoSQL, savoir gérer/concevoir une DB un minimum est un must have dans n'importe quel domaine de la programmation 😌
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="all-carousel">
                     <div class="degrade left"></div>
                     <div class="degrade right"></div>
@@ -265,26 +387,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <a class="col-md-6 col-lg-4" href="https://www.hackerrank.com/certificates/bbf5a88b5e62" target="_blank">
-                        <img src="assets/img/certif_c%23.png" alt="certif" style="width: 350px">
-                    </a>
-                    <a class="col-md-6 col-lg-4" href="https://www.hackerrank.com/certificates/bbf5a88b5e62" target="_blank">
-                        <img src="assets/img/certif_c%23.png" alt="certif" style="width: 350px">
-                    </a>
-                </div>
             </div>
         </section>
         <!-- Portfolio Section-->
-        <section class="page-section bg-primary portfolio" id="portfolio">
+        <section class="page-section bg-secondary portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase mb-0 fr">Projets Personnels</h2>
                 <h2 class="page-section-heading text-center text-uppercase mb-0 en" hidden>Personnal Projects</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom ">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-senate"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -353,9 +467,9 @@
                 <h2 class="page-section-heading text-center text-uppercase mb-0 fr">Me contacter</h2>
                 <h2 class="page-section-heading text-center text-uppercase mb-0 en" hidden>Contact me</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom ">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-brands fa-galactic-senate"></i></div>
+                    <div class="divider-custom-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <form action="https://fabform.io/f/Ppuipej" method="post">
@@ -374,33 +488,9 @@
                         <label class="en" for="bodyInput" hidden>Content</label>
                         <textarea name="body" class="form-control" id="bodyInput" rows="3" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary fr">Enoyer</button>
-                    <button type="submit" class="btn btn-primary en" hidden>Submit</button>
+                    <button type="submit" class="btn btn-primary float-right fr">Enoyer</button>
+                    <button type="submit" class="btn btn-primary float-right en" hidden>Submit</button>
                 </form>
-                <!-- Contact Section Form-->
-                <!--<div class="row">-->
-                <!--    <div class="col-lg-8 mx-auto text-center lead">-->
-                <!--        <a href="mailto:nemo.brunschwig@gmail.com" target="_blank" class="mr-2">-->
-                <!--            <i class="fas fa-envelope"></i>-->
-                <!--        </a>-->
-                <!--        <a href="https://www.linkedin.com/in/nemo-brunschwig/" target="_blank" class="mr-2">-->
-                <!--            <i class="fa-brands fa-linkedin"></i>-->
-                <!--        </a>-->
-                <!--        <a id="discord-pop" type="button" class="popup mr-1" onclick="CopieDiscord()">-->
-                <!--            <i class="fa-brands fa-discord"></i>-->
-                <!--            <span class="popuptext" id="discordPopup">Copié !</span>-->
-                <!--        </a>-->
-                <!--        <a href="https://github.com/Mizari-W" target="_blank">-->
-                <!--            <i class="fab fa-github"></i>-->
-                <!--        </a>-->
-                <!--        <a href="https://github.com/Nemo-Brunschwig" target="_blank">-->
-                <!--            <i class="fab fa-github"></i>-->
-                <!--        </a>-->
-                <!--        <a href="https://nemo-brunschwig.itch.io/" target="_blank">-->
-                <!--            <i class="fa-brands fa-itch-io"></i>-->
-                <!--        </a>-->
-                <!--    </div>-->
-                <!--</div>-->
             </div>
         </section>
         <!-- Copyright Section-->
@@ -426,7 +516,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal1Label">Wac-E</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -488,7 +578,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal2Label">Discord presence for Notion</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -546,7 +636,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal3Label">Sith web de Luc Brunschwig</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -604,7 +694,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal4Label">Invasion des Canards</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -661,7 +751,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal5Label">Swimmy Shark</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -728,7 +818,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal6Label">TANKS EVOLVED</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -790,7 +880,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-uppercase mb-0" id="skillsModalLabel">Place Holder</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom divider-light">
+                                    <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
@@ -903,7 +993,7 @@
                         write();
                         break;
                     case states.PAUSE:
-                        pause(5);
+                        pause(10);
                         break;
                     case states.CLEAR:
                         clear();

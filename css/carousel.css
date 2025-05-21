@@ -245,9 +245,8 @@
   cursor: pointer;
   width: 50px;
   animation: float 4s ease-in-out infinite;
-  margin: auto;
   display: flex;
-  margin-top: 25px;
+  margin: auto;
 }
 
 .degrade.left {
