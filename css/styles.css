@@ -49,6 +49,7 @@
   --danger: var(--red);
   --light: var(--text);
   --dark: var(--crust);
+  --modal-hover: rgba(205, 214, 244, 0.9);
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -6185,6 +6186,10 @@ button.bg-dark:focus {
   background-color: #fff !important;
 }
 
+.bg-crust {
+  background-color: var(--crust);
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -10143,11 +10148,11 @@ h3 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: var(--dark);
+    color: var(--crust);
     background: var(--blue);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: var(--dark);
+    color: var(--crust);
     background: var(--blue);
   }
 
@@ -10203,7 +10208,7 @@ h3 {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: var(--modal-hover);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
