@@ -31,6 +31,11 @@
         <link href="css/skills.css" rel="stylesheet">
         <!-- projects -->
         <link href="css/projects.css" rel="stylesheet">
+        <!-- tabs -->
+        <link href="css/tabs.css" rel="stylesheet">
+        <script src="js/tabs.js"></script>
+        <!-- switch lang -->
+        <script src="js/switch_lang.js"></script>
         <!-- twemoji -->
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
@@ -443,81 +448,87 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div class="rounded projects projects-dark" id="projects" style="overflow-y: hidden;">
-                    <ul class="nav nav-tabs" id="StoryTab" role="tablist">
+
+                <!-- Tab links -->
+                <div class="tab rounded-top border border-bottom-0 border-grey-0">
+                    <ul class="nav nav-tabs" id="projects-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="game-tab" data-bs-toggle="tab" data-bs-target="#game-tab-pane" type="button" role="tab" aria-controls="game-tab-pane" aria-selected="true">Game Dev</button>
+                            <a class="nav-link active" id="game-tab" data-toggle="tab" href="#game" role="tab" aria-controls="game" aria-selected="true">Game</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="web-tab" data-bs-toggle="tab" data-bs-target="#web-tab-pane" type="button" role="tab" aria-controls="web-tab-pane" aria-selected="false" tabindex="-1">Web Dev</button>
+                            <a class="nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">Web</a>
                         </li>
                     </ul>
-                    <div class="rounded projects projects-dark" id="projects-content" style="border: 0; max-height: 640px; width: 100%;">
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade active show" id="lpdi-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                                <div class="row justify-content-center">
-                                    <!-- Portfolio Item 1-->
-                                    <div class="col-md-6 col-lg-4 mb-5">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""/>
-                                        </div>
+                </div>
+
+                <!-- Tab content -->
+                <!--tabcontent border border-top-0 border-grey-0 rounded-bottom-->
+                <div class="tab-content border border-top-0 border-grey-0 rounded-bottom p-2" id="projects-tab-content">
+                    <div id="game" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row justify-content-center">
+                            <!-- Portfolio Item 1-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <!-- Portfolio Item 2-->
-                                    <div class="col-md-6 col-lg-4 mb-5">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item 3-->
-                                    <div class="col-md-6 col-lg-4 mb-5">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item 4-->
-                                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item 5-->
-                                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt=""/>
-                                        </div>
-                                    </div>
-                                    <!-- Portfolio Item 6-->
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                                            </div>
-                                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt=""/>
-                                        </div>
-                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""/>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="edw-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
+                            <!-- Portfolio Item 2-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 3-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/circus.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 4-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/game.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 5-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/safe.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 6-->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt=""/>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div id="web" class="tab-pane fade" role="tabpanel" aria-labelledby="profile-tab">
+                      <h3>Paris</h3>
+                      <p>Paris is the capital of France.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
         <!-- Contact Section-->
@@ -964,9 +975,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- Switch Lang -->
-        <script src="js/switch_lang.js"></script>
-        <!-- Typewrinting effect -->
+        <!-- typewriting effect -->
         <script src="js/typewriting.js"></script>
         <!-- Bootstrap popover -->
         <script type="text/javascript">
@@ -1006,6 +1015,9 @@
             let date_year = new Date();
             date_year = date_year.getFullYear();
             copyright_year.innerText = date_year;
+
+            // default tab
+            document.getElementById("defaultOpen").click();
         </script>
     </body>
 </html>
