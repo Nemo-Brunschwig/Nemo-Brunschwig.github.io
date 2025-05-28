@@ -15,7 +15,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://kit.fontawesome.com/0d32bc3e88.js" crossorigin="anonymous"></script>
         <!-- icomoon icons -->
-        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4c135e7899/Portfolio/style.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/cf8153849e/Portfolio/style.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
@@ -29,6 +29,8 @@
         <link href="css/typewriting.css" rel="stylesheet">
         <!-- skills -->
         <link href="css/skills.css" rel="stylesheet">
+        <!-- projects -->
+        <link href="css/projects.css" rel="stylesheet">
         <!-- twemoji -->
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
@@ -175,12 +177,15 @@
                 </div>
                 <!-- Skills Section Content-->
                 <div class="row">
-                    <div class="col border border-purple rounded pt-5 position-relative mb-5 mr-md-3">
+                    <div class="col-sm-12 col-md border border-purple rounded pt-5 position-relative mb-5 mr-md-3">
                         <div class="head-skill position-absolute p-2 bg-primary">
                             <h3 class="text-uppercase text-purple">Game Dev</h3>
                         </div>
                         <div class="accordion mb-4" id="gameSkills">
                             <div class="text-center">
+                                <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#csharp" aria-expanded="false" aria-controls="csharp">
+                                    <i class="icon-csharp"></i>
+                                </button>
                                 <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#unity" aria-expanded="false" aria-controls="unity">
                                     <i class="fa-brands fa-unity"></i>
                                 </button>
@@ -192,9 +197,19 @@
                                 </button>
                             </div>
 
-                            <div id="unity" class="collapse show" aria-labelledby="headingOne" data-parent="#gameSkills">
+                            <div id="csharp" class="collapse show" aria-labelledby="headingOne" data-parent="#gameSkills">
                                 <div class="card-body">
-                                    Je fais du Unity et du C# et j'ai un bon niveau 👍
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié le langage C# tout du long de mes études. D'abord en BTS pour créer des logiciels. Puis à Anaten pour créer des jeux vidéo avec <a class="btn-link" type="button" data-toggle="collapse" data-target="#unity" aria-expanded="false" aria-controls="unity">Unity</a>.
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Certifications</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <div class="row justify-content-center mt-1">
                                         <a class="col text-center" href="https://www.hackerrank.com/certificates/bbf5a88b5e62" target="_blank">
                                             <img src="assets/img/certif_c%23.png" alt="certif" style="width: 210px">
@@ -203,9 +218,36 @@
                                 </div>
                             </div>
 
+                            <div id="unity" class="collapse" aria-labelledby="headingOne" data-parent="#gameSkills">
+                                <div class="card-body">
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié Unity pendant 2 ans à l'école Anaten. C'est le moteur de jeux que j'utilise le plus, notamment lors de mes participations aux Game Jam.
+                                </div>
+                            </div>
+
+                            <div id="cpp" class="collapse" aria-labelledby="headingTow" data-parent="#gameSkills">
+                                <div class="card-body">
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié Unreal Engine pendant 1 an à l'école Anaten.
+                                </div>
+                            </div>
+
                             <div id="unreal" class="collapse" aria-labelledby="headingTow" data-parent="#gameSkills">
                                 <div class="card-body">
-                                    Je fais du Unreal Engine et du C++ et je me débrouille pas trop mal 🫡
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié Unreal Engine pendant 1 an à l'école Anaten.
                                 </div>
                             </div>
 
@@ -216,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col border border-success rounded pt-5 position-relative mb-5">
+                    <div class="col-sm-12 col-md border border-success rounded pt-5 position-relative mb-5">
                         <div class="head-skill position-absolute p-2 bg-primary">
                             <h3 class="text-uppercase text-success">Web Dev</h3>
                         </div>
@@ -401,60 +443,78 @@
                     <div class="divider-custom-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                <div class="rounded projects projects-dark" id="projects" style="overflow-y: hidden;">
+                    <ul class="nav nav-tabs" id="StoryTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="game-tab" data-bs-toggle="tab" data-bs-target="#game-tab-pane" type="button" role="tab" aria-controls="game-tab-pane" aria-selected="true">Game Dev</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="web-tab" data-bs-toggle="tab" data-bs-target="#web-tab-pane" type="button" role="tab" aria-controls="web-tab-pane" aria-selected="false" tabindex="-1">Web Dev</button>
+                        </li>
+                    </ul>
+                    <div class="rounded projects projects-dark" id="projects-content" style="border: 0; max-height: 640px; width: 100%;">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade active show" id="lpdi-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Item 2-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Item 3-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Item 4-->
+                                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Item 5-->
+                                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Item 6-->
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                            <div class="tab-pane fade" id="edw-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt=""/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt=""/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt=""/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt=""/>
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt=""/>
                         </div>
                     </div>
                 </div>
@@ -904,6 +964,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Switch Lang -->
+        <script src="js/switch_lang.js"></script>
+        <!-- Typewrinting effect -->
+        <script src="js/typewriting.js"></script>
         <!-- Bootstrap popover -->
         <script type="text/javascript">
             //autoriser les popover
@@ -919,23 +983,12 @@
                 modal.find('#skillsModalText').text(recipient);
                 modal.find('#skillsModalLabel').text(img.attr('alt'));
             });
-
-            //fonction pour copier mon pseudo Discord
-            function CopieDiscord() {
-                if (navigator) {
-                    navigator.clipboard.writeText("mizari.dev");
-                    let popup = document.getElementById("discordPopup");
-                    popup.classList.toggle("show");
-                } else {
-                    alert("Votre navigateur ne supporte pas cette fonctionnalité.");
-                }
-            }
         </script>
 
         <!-- script random -->
         <script type="text/javascript">
             // easter egg
-            function egg()  {
+            function egg() {
                 let popup = document.getElementById("myPopup");
                 popup.classList.toggle("show");
             }
@@ -944,104 +997,9 @@
             twemoji.parse(
                 document.body,
                 {
-
                     base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
-
                 }
             );
-
-            // switch to english
-            let params = new URLSearchParams(document.location.search);
-            let lang = params.get("lang");
-            if (lang === "en") {
-                let fr = document.querySelectorAll(".fr");
-                fr.forEach(el => {
-                    el.setAttribute("hidden", "true");
-                });
-                let en = document.querySelectorAll(".en");
-                en.forEach(el => {
-                    el.removeAttribute("hidden");
-                });
-            }
-
-            // typewriting effect
-            let text = document.querySelector(".typewriting-text:not([hidden])");
-            let contents_fr = [
-                "Jeux Vidéo",
-                "Réalité étendue",
-                "Web"
-            ];
-            let contents_en = [
-                "Game",
-                "Extended reality",
-                "Web"
-            ];
-            let content = '';
-            let text_index = 0;
-            let char_index = 0;
-            let pause_timer = 0;
-            let states = {
-                WRITE: 0,
-                PAUSE: 1,
-                CLEAR: 2
-            }
-            let state = states.WRITE;
-
-            let timer = setInterval(() => {
-                switch (state) {
-                    case states.WRITE:
-                        write();
-                        break;
-                    case states.PAUSE:
-                        pause(10);
-                        break;
-                    case states.CLEAR:
-                        clear();
-                        break;
-                }
-            }, 75);
-
-            /**
-             * when the cursor is in writing state
-             */
-            function write() {
-                if (Math.floor(char_index/2) < content.length) {
-                    if (char_index%2)
-                        text.innerHTML += content[Math.floor(char_index/2)];
-                    char_index++;
-                } else {
-                    char_index = content.length;
-                    state = states.PAUSE;
-                }
-            }
-
-            /**
-             * when the cursor is in pause state
-             * @param {number} time the time to be in pause
-             */
-            function pause(time) {
-                if (pause_timer < time) {
-                    pause_timer++;
-                } else {
-                    pause_timer = 0;
-                    state = states.CLEAR;
-                }
-            }
-
-            /**
-             * when the cursor is in clear state
-             */
-            function clear() {
-                if (char_index > 0) {
-                    text.innerHTML = text.innerHTML.slice(0, -1);
-                    char_index--;
-                } else {
-                    char_index = 0;
-                    content = lang==="en"?contents_en[text_index%contents_en.length]:contents_fr[text_index%contents_fr.length];
-                    text_index++;
-                    state = states.WRITE;
-                }
-            }
 
             // copyright year
             let copyright_year = document.querySelector("#year");
