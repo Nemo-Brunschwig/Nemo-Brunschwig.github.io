@@ -65,7 +65,7 @@
   background-color: rgba(0, 0, 0, 0);
 }
 *::-webkit-scrollbar-thumb{
-  background-color: var(--light);
+  background-color: var(--text);
   border-radius: 5px;
 }
 
@@ -10296,59 +10296,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 /*Add Mizari*/
-.atom-editor {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/atom_editor.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
 
-.electron-js {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/electron_js.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
-
-.visual-studio {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/visual_studio.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
-
-.csharp {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/csharp.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
-
-.gms {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/game-maker.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
-
-.construct {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../assets/img/svg/construct.svg') 50% 50% no-repeat;
-  background-size: 100%;
-  vertical-align: middle;
-}
 
 .emoji{
   max-width: 30px;
