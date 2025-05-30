@@ -1,4 +1,4 @@
-let text = document.querySelector(".typewriting-text:not([hidden])");
+let text = document.querySelector(`.typewriting-text.${lang}`);
 let contents_fr = [
     "Jeux Vidéo",
     "Réalité étendue",

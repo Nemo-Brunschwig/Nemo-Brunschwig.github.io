@@ -1,16 +1,24 @@
-let switch_input = document.getElementById("theme-switcher-input");
-switch_input.addEventListener("change", (e) => switchTheme(e));
+let switch_them = document.getElementById("theme-switcher-input");
+switch_them.addEventListener("change", (e) => switchTheme(e));
+
+let style_theme = document.getElementById("theme");
+if (style_theme === null) {
+    style_theme = document.createElement("style");
+    style_theme.id = "theme";
+    let head = document.querySelector("head");
+    head.appendChild(style_theme);
+}
 
 function switchTheme(e) {
-    if (switch_input.checked) {
-        let style = document.getElementById("light-theme");
-        if (style === null) {
-            style = document.createElement("style");
-            style.id = "light-theme";
-            let head = document.querySelector("head");
-            head.appendChild(style);
-        }
-        style.innerHTML = `:root {
+    if (style_theme === null) {
+        style_theme = document.createElement("style");
+        style_theme.id = "theme";
+        let head = document.querySelector("head");
+        head.appendChild(style_theme);
+    }
+
+    if (switch_them.checked) {
+        style_theme.innerHTML = `:root {
             --rosewater: #dc8a78;
             --flamingo: #dd7878;
             --pink: #ea76cb;
@@ -47,13 +55,6 @@ function switchTheme(e) {
             --modal-hover: rgba(76, 79, 105, 0.9)
         }`
     } else {
-        let style = document.getElementById("light-theme");
-        if (style === null) {
-            style = document.createElement("style");
-            style.id = "light-theme";
-            let head = document.querySelector("head");
-            head.appendChild(style);
-        }
-        style.innerHTML = "";
+        style_theme.innerHTML = "";
     }
 }
