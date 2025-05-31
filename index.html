@@ -15,7 +15,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://kit.fontawesome.com/0d32bc3e88.js" crossorigin="anonymous"></script>
         <!-- icomoon icons -->
-        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/732c4a896a/Portfolio/style.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4319750cc4/Portfolio/style.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
@@ -65,7 +65,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                     <button onclick="switchLang()" class="btn btn-link fr">🇬🇧</button>
-                    <button  onclick="switchLang()" class="btn btn-link en">🇫🇷</button>
+                    <button onclick="switchLang()" class="btn btn-link en">🇫🇷</button>
                     <div class="toggle-button-cover">
                         <div id="theme-switcher" class="theme-button">
                             <input class="theme-checkbox" type="checkbox" id="theme-switcher-input">
@@ -472,13 +472,13 @@
                 <div class="tab rounded-top border border-bottom-0 border-grey-0 p-2">
                     <ul class="nav nav-tabs" id="projects-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="game-tab" data-toggle="tab" href="#game" role="tab" aria-controls="game" aria-selected="true">Game Dev</a>
+                            <a class="nav-link h3 mb-0 active" id="game-tab" data-toggle="tab" href="#game" role="tab" aria-controls="game" aria-selected="true">Game Dev</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">Web Dev</a>
+                            <a class="nav-link h3 mb-0" id="web-tab" data-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="false">Web Dev</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false">Autre</a>
+                            <a class="nav-link h3 mb-0" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="other" aria-selected="false"><span class="fr">Autre</span><span class="en">Other</span></a>
                         </li>
                     </ul>
                 </div>
@@ -488,27 +488,86 @@
                 <div class="tab-content border border-top-0 border-grey-0 rounded-bottom p-2" id="projects-tab-content">
                     <div id="game" class="tab-pane fade show active" role="tabpanel" aria-labelledby="game-tab">
                         <div class="row justify-content-center">
+                            <!-- Game Item 2-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-2">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/gof.png" alt="cover image of Gardener On Fire"/>
+                                </div>
+                            </div>
                             <!-- Game Item 1-->
                             <div class="col-md-6 col-lg-4 mb-5">
                                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-1">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt=""/>
+                                    <img class="img-fluid" src="assets/img/portfolio/smash_bubble.jpg" alt="cover image of Super Smash Bubble"/>
                                 </div>
                             </div>
-                            <!-- Portfolio Item 2-->
+                            <!-- Game Item 3-->
                             <div class="col-md-6 col-lg-4 mb-5">
-                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-3">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt=""/>
+                                    <img class="img-fluid" src="assets/img/portfolio/leet.png" alt="cover image of 1337 vs LEET"/>
+                                </div>
+                            </div>
+                            <!-- Game Item 4-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-4">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/idc.png" alt="cover image of Invasion des Canards"/>
+                                </div>
+                            </div>
+                            <!-- Game Item 5-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-5">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid bg-crust" src="assets/img/portfolio/as.png" alt="cover image of Algues Survivor"/>
+                                </div>
+                            </div>
+                            <!-- Game Item 6-->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-6">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/wukong.png" alt="cover image of Sun Wukong"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="web" class="tab-pane fade" role="tabpanel" aria-labelledby="web-tab">
+                        <div class="row justify-content-center">
+                            <!-- Game Item 2-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-2">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/gof.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Game Item 1-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-1">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/smash_bubble.jpg" alt=""/>
                                 </div>
                             </div>
                             <!-- Portfolio Item 3-->
                             <div class="col-md-6 col-lg-4 mb-5">
-                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-3">
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
@@ -545,14 +604,63 @@
                         </div>
                     </div>
 
-                    <div id="web" class="tab-pane fade" role="tabpanel" aria-labelledby="web-tab">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
-                    </div>
-
                     <div id="other" class="tab-pane fade" role="tabpanel" aria-labelledby="other-tab">
-                        <h3>Paris</h3>
-                        <p>Paris is the capital of France.</p>
+                        <div class="row justify-content-center">
+                            <!-- Game Item 2-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-2">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/gof.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Game Item 1-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-1">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/smash_bubble.jpg" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 3-->
+                            <div class="col-md-6 col-lg-4 mb-5">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#game-modal-3">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/circus.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 4-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/game.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 5-->
+                            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/safe.png" alt=""/>
+                                </div>
+                            </div>
+                            <!-- Portfolio Item 6-->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                        <div class="portfolio-item-caption-content text-center text-primary"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -573,17 +681,17 @@
                 <form action="https://fabform.io/f/Ppuipej" method="post">
                     <div class="form-group">
                         <label class="fr" for="emailInput">Votre adresse mail</label>
-                        <label class="en" for="emailInput" hidden>Your email address</label>
+                        <label class="en" for="emailInput">Your email address</label>
                         <input name="mail" type="email" class="form-control" id="emailInput" placeholder="nom@example.com" required>
                     </div>
                     <div class="form-group">
                         <label class="fr" for="objectInput">Objet</label>
-                        <label class="en" for="objectInput" hidden>Object</label>
+                        <label class="en" for="objectInput">Object</label>
                         <input name="object" type="text" class="form-control" id="objectInput" placeholder="Offre d'emploi :D" required>
                     </div>
                     <div class="form-group">
                         <label class="fr" for="bodyInput">Contenu</label>
-                        <label class="en" for="bodyInput" hidden>Content</label>
+                        <label class="en" for="bodyInput">Content</label>
                         <textarea name="body" class="form-control" id="bodyInput" rows="3" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary float-right fr">Enoyer</button>
@@ -599,9 +707,9 @@
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <!-- Game Modals-->
+        <!-- Game Modal 1-->
+        <div class="portfolio-modal modal fade" id="game-modal-1" tabindex="-1" role="dialog" aria-labelledby="game-modal-1-Label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -611,165 +719,71 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal1Label">Wac-E</h2>
+                                    <!-- Game Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-1-Label">Super Smash Bubble</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-gamepad"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
-                                    <p>Mon bot Discord. Je l'utilise pour tester l'API Discord et j'essaye d'y intégrer toutes les fontcionnalités que je peux juste pour m'amuser.</p>
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-solid fa-person-digging" title="en cours"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js-square" title="JavaScript" style="color: #000;"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://nodejs.org/fr/" target="_blank"><i class="fa-brands fa-node-js" title="NodeJS" style="color: #000;"></i></a> <a href="https://atom.io/" target="_blank"><div class="atom-editor" title="Atom Editor"></div></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Artiste</td>
-                                                    <td>:</td>
-                                                    <td><a href="https://www.instagram.com/Lyguus/" target="_blank">@Lyguus</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://github.com/Warriors-Army/warriors-bot-v2" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        Repos GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal2Label">Discord presence for Notion</h2>
-                                    <!-- Icon Divider-->
+                                    <!-- Game Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/smash_bubble.jpg" alt="cover image of Super Smash Bubble"/>
+                                    <!-- Game Modal - Text-->
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
-                                    <p>Un petit programme à ajouter sur l'application Notion pour afficher son activité Notion sur son profil Discord. Affiche le nom de la page sur laquelle on travail ainsi que le nom du workspace dans lequel on est.</p>
-                                    <img src="assets/img/notion_exemple.png" class="img-fluid rounded mb-5"><br>
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-solid fa-check" title="fini"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js-square" title="JavaScript" style="color: #000;"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://atom.io/" target="_blank"><div class="atom-editor" title="Atom Editor"></div></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://github.com/Mizari-W/Discord-RPC-for-Notion" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                        Repos GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal3Label">Sith web de Luc Brunschwig</h2>
-                                    <!-- Icon Divider-->
+
+                                    <p>Participation à la <a href="https://globalgamejam.org/" target="_blank">Global Game Jam 2025</a>. Le thème était "BUBBLE". Sautez de bulles en bulles en tabassant votre adversaire pour gagner ! Attention à ne pas tomber dans le bain !</p>
+
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
-                                    <p>Un site web pour mon père. C'est une sorte de portfolio où on y retrouve une brève biographie, la présentation de ses œuvres ainsi que quelques unes de ses interviews.</p>
-                                    <img src="assets/img/Photo-Luc-B-2.jpg" class="img-fluid rounded mb-5" style="height: 500px;">
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-solid fa-check" title="fini"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js-square" title="JavaScript" style="color: #000;"></i></a> <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5" title="HTML" style="color: #000;"></i></a> <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt" title="CSS" style="color: #000;"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://atom.io/" target="_blank"><div class="atom-editor" title="Atom Editor"></div></a> <a href="https://pages.github.com/" target="_blank"><i class="fab fa-github" style="color: #000;" title="GitHub Pages"></i></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.github.io/Luc-Brunschwig/" target="_blank">
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langage</td>
+                                                <td class="en">Language</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-csharp" data-toggle="tooltip" data-placement="top" title="CSharp"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outils</td>
+                                                <td class="en">Tools</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="fa-brands fa-unity" data-toggle="tooltip" data-placement="top" title="Unity"></i>
+                                                    <i class="fa-brands fa-git-alt" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Autres dev</td>
+                                                <td class="en">Other dev</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://dwarffy.itch.io/" target="_blank">Dwarffy</a><br>
+                                                    <a href="https://horrorfabula.itch.io/" target="_blank">horrorfabula</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Artistes</td>
+                                                <td class="en">Artists</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://www.instagram.com/rok3tte/" target="_blank">@rok3tte</a><br>
+                                                    <a href="https://www.instagram.com/yamshik._/" target="_blank">@yamshik._</a><br>
+                                                    <a href="https://www.instagram.com/umi.xall/" target="_blank">@umi.xall</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/super-smash-bubble" target="_blank">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                        Voir le site
+                                        Jouer au jeu
                                     </a>
                                 </div>
                             </div>
@@ -778,8 +792,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+        <!-- Game Modal 2-->
+        <div class="portfolio-modal modal fade" id="game-modal-2" tabindex="-1" role="dialog" aria-labelledby="game-modal-2-label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -790,40 +804,207 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal4Label">Invasion des Canards</h2>
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-2-label">Gardener on Fire</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-gamepad"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt=""/>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gof.png" alt="cover image of Gardener On Fire"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p>Participation à la <a href="https://globalgamejam.org/" target="_blank">Game Jam 2023</a>. Le thème était "ROOTS". Vous êtes un paisible jardinier qui s'occupe de son jardin du mieux qu'il peut. Un jour, des racines humanoïdes prennent vie et décident de s'attaquer à votre maison (sans raison 🤷‍♂️). Prenez vos outils pour défendre votre maison et aller massacrer de la racine !</p>
+
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langage</td>
+                                                <td class="en">Language</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-csharp" data-toggle="tooltip" data-placement="top" title="CSharp"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outils</td>
+                                                <td class="en">Tools</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="fa-brands fa-unity" data-toggle="tooltip" data-placement="top" title="Unity"></i>
+                                                    <i class="fa-brands fa-git-alt" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                                                    <i class="fa-brands fa-meta" data-toggle="tooltip" data-placement="top" title="Virtual Reality"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Autres dev</td>
+                                                <td class="en">Other dev</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://synn-sino.itch.io/" target="_blank">Synn-sino</a><br>
+                                                    <a href="https://sam420.itch.io/" target="_blank">Sam420</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Artistes</td>
+                                                <td class="en">Artists</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://www.artstation.com/verso" target="_blank">verso</a><br>
+                                                    <a href="https://samuelpriolet64.wixsite.com/tetedepioches" target="_blank">tetedepioches</a><br>
+                                                    <a href="https://www.artstation.com/malorybeaumont" target="_blank">malorybeaumont</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/gardener-on-fire" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Jouer au jeu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Modal 3-->
+        <div class="portfolio-modal modal fade" id="game-modal-3" tabindex="-1" role="dialog" aria-labelledby="game-modal-3-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Game Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-3-label">1337 vs LEET</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-gamepad"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Game Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/leet.png" alt="cover image of 1337 vs LEET"/>
+                                    <!-- Game Modal - Text-->
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p>Participation à <a href="https://itch.io/jam/la-jam-des-devs" target="_blank">La Jam des Devs 2024</a>. Le thème était "ASCII Art"</p>
+
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langage</td>
+                                                <td class="en">Language</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-csharp" data-toggle="tooltip" data-placement="top" title="CSharp"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outils</td>
+                                                <td class="en">Tools</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="fa-solid fa-gear" data-toggle="tooltip" data-placement="top" title="custom engine"></i>
+                                                    <i class="fa-brands fa-git-alt" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Autres dev</td>
+                                                <td class="en">Other dev</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://saidus2.itch.io/" target="_blank">Saidus2</a><br>
+                                                    <a href="https://archivist062.itch.io/" target="_blank">Ludovic 'Archivist' Lagouardette</a><br>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/1337-vs-leet/" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Jouer au jeu
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Game Modal 4-->
+        <div class="portfolio-modal modal fade" id="game-modal-4" tabindex="-1" role="dialog" aria-labelledby="game-modal-4-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Game Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-4-label">Invasion des Canards</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fa-solid fa-gamepad"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Game Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/idc.png" alt="cover image of Invasion des Canards"/>
+                                    <!-- Game Modal - Text-->
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <p>Un petit jeu que je développe tout seul. Je le développe sous Game Maker Studio 2, et ce projet a pour principal but de tester l'outil.</p>
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-solid fa-person-digging" title="en cours"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://manual-fr.yoyogames.com/GameMaker_Language/GameMaker_Language_Index.htm" target="_blank"><div class="gms" title="Game Maker Language"></div></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://gamemaker.io/fr" target="_blank"><div class="gms" title="Game Maker Studio 2"></div></a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
+
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langage</td>
+                                                <td class="en">Language</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-game-maker" data-toggle="tooltip" data-placement="top" title="GML Code"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outil</td>
+                                                <td class="en">Tool</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-game-maker" data-toggle="tooltip" data-placement="top" title="GameMaker Studio 2"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Artiste</td>
+                                                <td class="en">Artist</td>
+                                                <td>:</td>
+                                                <td><a href="https://www.kenney.nl/" target="_blank">Kenney</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                     <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/invasion-des-canards" target="_blank">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         Jouer au jeu
@@ -835,8 +1016,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+        <!-- Game Modal 5-->
+        <div class="portfolio-modal modal fade" id="game-modal-5" tabindex="-1" role="dialog" aria-labelledby="game-modal-5-label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -846,52 +1027,67 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal5Label">Swimmy Shark</h2>
+                                    <!-- Game Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-5-label">Algues Survivor</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gamepad"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt=""/>
-                                    <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
-                                    <p>Mini projet jeu vidéo. Un Flappy Bird avec un requin à la place de l'oiseau, des rochers et des hameçons à la place des tuyeaux et une mini histoire pour accompagner le jeu.</p>
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-solid fa-check" title="fini"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/" target="_blank"><div class="csharp" title="C#"></div></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://unity.com/fr" target="_blank"><i class="fa-brands fa-unity" title="Unity 3D" style="color: #000;"></i></a> <a href="https://visualstudio.microsoft.com/fr/" target="_blank"><div class="visual-studio" title="Atom Editor"></div></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Artiste</td>
-                                                    <td>:</td>
-                                                    <td><a href="https://www.instagram.com/Lyguus/" target="_blank">@Lyguus</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Autres dev</td>
-                                                    <td>:</td>
-                                                    <td><a href="https://synn-sino.itch.io/" target="_blank">Nicolas Combaluzier</a>, <a href="https://lolominiom.itch.io/" target="_blank">Emilien Sauvade</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/swimmy-shark" target="_blank">
+                                    <!-- Game Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/as.png" alt="cover image of Algues Survivor"/>
+                                    <!-- Game Modal - Text-->
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p>Participation à la <a href="https://www.scientificgamejam.org/" target="_blank">Scientifique Game Jam 2025</a> à Nantes. Vous jouez 2 algues et vous voulez grandir sur toute la surface. Mais quelques dangers vont essayer de vous arrêter.</p>
+
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langage</td>
+                                                <td class="en">Language</td>
+                                                <td>:</td>
+                                                <td class="lead"><i class="icon-csharp" data-toggle="tooltip" data-placement="top" title="CSharp"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outils</td>
+                                                <td class="en">Tools</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="fa-brands fa-unity" data-toggle="tooltip" data-placement="top" title="Unity"></i>
+                                                    <i class="fa-brands fa-git-alt" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Autres dev</td>
+                                                <td class="en">Other dev</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://zaldair.itch.io/" target="_blank">Zaldair</a><br>
+                                                    <a href="https://erwandrd.itch.io/" target="_blank">Erwan Durand</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Artistes</td>
+                                                <td class="en">Artists</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://www.instagram.com/a.alorni/" target="_blank">@a.alorni</a><br>
+                                                    <a href="https://www.linkedin.com/in/steward-souppaya-a6470827/" target="_blank">Steward SOUPPAYA</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/algues-survivor" target="_blank">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         Jouer au jeu
                                     </a>
@@ -902,8 +1098,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <!-- Game Modal 6-->
+        <div class="portfolio-modal modal fade" id="game-modal-6" tabindex="-1" role="dialog" aria-labelledby="game-modal-6-label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -914,46 +1110,71 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="portfolioModal6Label">TANKS EVOLVED</h2>
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0" id="game-modal-6-label">Sun Wukong</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom ">
                                         <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-gamepad"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt=""/>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukong.png" alt="cover image of Sun Wukong"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <h2>Description</h2>
-                                    <p>Après avoir participé à ma première Game Jam où j'ai découvert Construct 3, j'ai décidé de créer mes propres jeux. J'ai imaginé un petit jeu multi joueur tout simple. N'aillant que la version gratuite du logiciel, je n'ai pas pu développer mon idée à fond, mais à l'époque j'étais déjà satsifait du résultat.</p>
-                                    <h2>Détails</h2>
-                                    <center>
-                                        <table class="table col-lg-5 text-center">
-                                            <tbody>
-                                                <tr>
-                                                    <td>État</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><i class="fa-sharp fa-solid fa-xmark" title="abandonné"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Langages</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://www.construct.net/en/make-games/games-editor" target="_blank"><i class="construct" title="no code"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outils</td>
-                                                    <td>:</td>
-                                                    <td class="lead"><a href="https://www.construct.net/" target="_blank"><i class="construct" title="Construct 3" style="color: #000;"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Artiste</td>
-                                                    <td>:</td>
-                                                    <td><a href="https://www.kenney.nl/" target="_blank">Kenney</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </center>
-                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/tanks-evolved" target="_blank">
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Description</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p>Play the legendary character of Chinese literature : Sun Wukong. You will have to skillfully use your supernatural abilities to move through the landscapes of ancient China.</p>
+
+                                    <div class="divider-custom ">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><h2>Détails</h2></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <table class="table col-lg-5 text-center mx-auto">
+                                        <tbody>
+                                            <tr>
+                                                <td class="fr">Langages</td>
+                                                <td class="en">Languages</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="icon-cpp" data-toggle="tooltip" data-placement="top" title="C++"></i>
+                                                    <i class="icon-unrealengine" data-toggle="tooltip" data-placement="top" title="Unreal Engine Blueprints"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Outils</td>
+                                                <td class="en">Tools</td>
+                                                <td>:</td>
+                                                <td class="lead">
+                                                    <i class="icon-unrealengine" data-toggle="tooltip" data-placement="top" title="Unreal Engine"></i>
+                                                    <i class="fa-brands fa-git-alt" data-toggle="tooltip" data-placement="top" title="Git"></i>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Autre dev</td>
+                                                <td class="en">Other dev</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://dwarffy.itch.io/" target="_blank">Dwarffy</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fr">Artistes</td>
+                                                <td class="en">Artists</td>
+                                                <td>:</td>
+                                                <td>
+                                                    <a href="https://www.kenney.nl/" target="_blank">Kenney</a><br>
+                                                    <a href="https://www.fab.com/listings/27054d0c-c26e-4fe3-b6f9-fa778dfcb8b6" target="_blank">Epic Games</a><br>
+                                                    <a href="https://www.instagram.com/mae_art3d/" target="_blank">@mae_art3d</a><br>
+                                                    <a href="https://www.instagram.com/jeremycazenave_art/" target="_blank">@jeremycazenave_art</a><br>
+                                                    <a href="" target="_blank">Paco Gonzales</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a class="btn btn-xl btn-outline-secondary" href="https://nemo-brunschwig.itch.io/sun-wukong" target="_blank">
                                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         Jouer au jeu
                                     </a>
@@ -1010,9 +1231,9 @@
         <script src="js/typewriting.js"></script>
         <!-- Bootstrap popover -->
         <script type="text/javascript">
-            //autoriser les popover
-            let mailPop = document.getElementById('discord-pop');
-            let popover = new bootstrap.Popover(mailPop, {trigger: "focus"});
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
 
             //skills modal
             $('#skills-modal').on('show.bs.modal', function (event) {
