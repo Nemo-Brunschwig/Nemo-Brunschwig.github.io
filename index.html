@@ -15,7 +15,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://kit.fontawesome.com/0d32bc3e88.js" crossorigin="anonymous"></script>
         <!-- icomoon icons -->
-        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/fc8137d69c/Portfolio/style.css">
+        <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4e0ad2d2f4/Portfolio/style.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
@@ -250,7 +250,7 @@
                                     </div>
                                     <div class="row justify-content-center mt-1">
                                         <a class="col text-center" href="https://www.hackerrank.com/certificates/bbf5a88b5e62" target="_blank">
-                                            <img src="assets/img/certifs/certif_c%23_basic.png" alt="certif" style="width: 210px">
+                                            <img src="assets/img/certifs/certif_c%23_basic.png" alt="certif" style="width: 210px" data-toggle="tooltip" data-placement="top" title="C# (Basic)">
                                         </a>
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@
                         <div class="accordion mb-4" id="webSkills">
                             <div class="text-center">
                                 <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#front" aria-expanded="true" aria-controls="front">
-                                    <i class="fa-solid fa-globe"></i>
+                                    <i class="icon-trinit"></i>
                                 </button>
                                 <button class="btn btn-link btn-skill" type="button" data-toggle="collapse" data-target="#nodejs" aria-expanded="false" aria-controls="nodejs">
                                     <i class="fa-brands fa-node-js"></i>
@@ -385,7 +385,7 @@
                                         <div class="divider-custom-icon h1 text-uppercase">Description</div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    J'ai d'abord appris HTML/CSS en autodidacte, puis en BTS.
+                                    J'ai découvert la sainte trinité que sont HTML/CSS/JS au lycée quand j'ai voulu créer mon propre site web. Puis j'ai étudié ces langages plus en profondeur en BTS.
 
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -398,6 +398,17 @@
                                         <li><a class="btn btn-link" data-toggle="modal" data-target="#webModal2">Sith web de Luc</a></li>
                                         <li><a class="btn btn-link" data-toggle="modal" data-target="#webModal3">L'Ordre des Devs</a></li>
                                     </ul>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Certifications</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="row justify-content-center mt-1">
+                                        <a class="col text-center" href="https://www.hackerrank.com/certificates/6de97ef675ff" target="_blank">
+                                            <img src="assets/img/certifs/certif_js_basic.png" alt="certif" style="width: 210px" data-toggle="tooltip" data-placement="top" title="JavaScript (Basic)">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -419,17 +430,6 @@
                                     <ul>
                                         <li><a class="btn btn-link" data-toggle="modal" data-target="#webModal3">L'Ordre des Devs</a></li>
                                     </ul>
-
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon h1 text-uppercase">Certifications</div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <div class="row justify-content-center mt-1">
-                                        <a class="col text-center" href="https://www.hackerrank.com/certificates/6de97ef675ff" target="_blank">
-                                            <img src="assets/img/certifs/certif_js_basic.png" alt="certif" style="width: 210px">
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
 
@@ -496,6 +496,27 @@
                                 </div>
                             </div>
 
+                            <div id="next-auth" class="collapse" aria-labelledby="headingTow" data-parent="#webSkills">
+                                <div class="card-body">
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'utilise NextAuth.js pour gérer les connexions et sessions du site web de ma communauté <a href="https://discord.com/servers/l-ordre-des-devs-706640777450881114" target="_blank">L'Ordre des Devs</a>.
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase fr">Projets</div>
+                                        <div class="divider-custom-icon h1 text-uppercase en">Projets</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <ul>
+                                        <li><a class="btn btn-link" data-toggle="modal" data-target="#webModal3">L'Ordre des Devs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
                             <div id="prisma" class="collapse" aria-labelledby="headingTow" data-parent="#webSkills">
                                 <div class="card-body">
                                     <div class="divider-custom">
@@ -518,14 +539,22 @@
                             </div>
 
                             <div id="php" class="collapse" aria-labelledby="headingThree" data-parent="#webSkills">
-                                <div class="card-body">
-                                    J'ai appris à programmer en PHP en BTS et j'ai fait beaucoup de challenges PHP sur la plateforme Root-Me donc je sais casser les sites PHP 🤡
+                                <div class="card-body"><div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié PHP en BTS. J'ai également réalisé beaucoup de challenges de cybersécurité sur la plateforme <a href="https://www.root-me.org/Mizari-295045" target="_blank">Root-Me</a> donc j'en connais les failles et sais comment les éviter.
                                 </div>
                             </div>
 
                             <div id="database" class="collapse" aria-labelledby="headingFour" data-parent="#webSkills">
-                                <div class="card-body">
-                                    SQL, SQLite, NoSQL, savoir gérer/concevoir une DB un minimum est un must have dans n'importe quel domaine de la programmation 😌
+                                <div class="card-body"><div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon h1 text-uppercase">Description</div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    J'ai étudié plusieurs outils de bases de données en BTS (SQL, MySQL, SQLite, NoSQL, MongoDB, JSON, XML).
                                 </div>
                             </div>
                         </div>
